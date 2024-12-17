@@ -6,14 +6,6 @@ from gtts import gTTS
 from io import BytesIO
 from langchain_google_genai import GoogleGenerativeAI
 import os
-from dotenv import load_dotenv
-
-load_dotenv()  # Load .env file locally
-genai_key = os.getenv("GOOGLE_API_KEY")
-
-import os
-file_path = os.path.join(os.getcwd(), "file.txt")
-
 # Set the Tesseract OCR path
 # Adjust the path according to your operating system
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
